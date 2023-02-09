@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+       <!-- La etiqueta record son la que permitiran mostrar el campo color en el formulario producto-->
+       <record model='ir.ui.view' id='product_color_form_view'>
+        <field name='name'>applicant.form.fields</field>
+        <field name='model'>hr.applicant</field>
+        <field name='inherit_id' ref='hr_recruitment.hr_applicant_view_form'/>
+        <field name='type'>form</field>
+        <field name='arch' type='xml'>
+                <field name="emp_id" position="after"> <!-- after: despues del campo list_price -->
+                        <field name="apellidos"/>
+                        <field name="tipos"/>
+                        <field name="identificacións"/>
+                        <field name="f_aplicacion"/>
+                        <field name="f_actu_cv"/>
+                        <field name="f_nacimiento"/>
+                        <field name="edad"/>
+                        <field name="direccion"/>
+                        <field name="cp"/>
+                        <field name="ciudad"/>
+                        <field name="provincia"/>
+                        <field name="pais"/>
+                        <field name="nacionalidad"/>
+                        <field name="tipo_tel"/>
+                        <field name="tel"/>
+                        <field name="genero"/>
+                        <field name="estado_civil"/>
+                </field>
+                <field name="company_id" position="after"> <!-- after: despues del campo list_price -->
+                        <field name="lic_de_conducir"/>
+                        <field name="vehiculo_propio"/>
+                        <field name="disp_viajar"/>
+                        <field name="camb_residencia"/>
+                        <field name="discapa"/>
+                        <field name="exp_lab"/>
+                        <field name="formacion"/>
+                        <field name="idiomas"/>
+                        <field name="hab_y_conoci"/>
+                        <field name="evaluacion"/>
+                        <field name="test_de_comp"/>
+                        <field name="pres_filtrado_puntuacion"/>
+                        <field name="pregunta_filtrado"/>
+                        <field name="adecuacion"/>
+                        <field name="ia_match"/>
+                </field>
+        </field>
+
+</record>
+    </data>
+</odoo>
